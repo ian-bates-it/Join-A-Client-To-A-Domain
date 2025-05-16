@@ -1,19 +1,63 @@
-# Join A Client To A Domain
+<!--
+See Part 2_Deploying Active Directory around minute (18:05)
+-->
 
 <p align="center">
 <img src="https://github.com/user-attachments/assets/5f0f9ad2-0f1e-406e-8ff3-c5ce5e145a2b" alt="Microsoft Active Directory Logo"/>
 </p>
 
 
-Overview
+# Chapter 5: Join a Windows 10 Pro Client to a Windows 2022 Server Domain Controller
+
 1. Remote into the Windows 10 Pro Client
 2. Change the name of the Windows 10 Pro virtual machine.
 3. Join the Windows 10 Pro Client to the Windows 2022 Server Domain Controller.
 
 
+<h2>Environments and Technologies Used</h2>
+
+- Microsoft Azure (Virtual Machines/Compute)
+- Remote Desktop
+- Active Directory Domain Services
+
+<h2>Operating Systems Used </h2>
+
+- Windows Server 2022
+- Windows 10 Pro (21H2)
+
+
+<!--
+<h2>High-Level Deployment and Configuration Steps</h2>
+-->
+
+<h2>High-Level Configuration Steps</h2>
+
+- Part 1: [Remote into the Windows 10 Pro Client with Remote Desktop](https://github.com/ian-bates-it/Join-A-Client-To-A-Domain?tab=readme-ov-file#remote-into-the-windows-10-pro-client-with-remote-desktop)
+- Part 2: [Join the Windows 10 Pro Client to the Windows 2022 Server Domain](https://github.com/ian-bates-it/Join-A-Client-To-A-Domain?tab=readme-ov-file#join-the-windows-10-pro-client-vm-to-our-windows-2022-server-domain)
+- Part 3: [Confirm the Windows 10 Pro Client has joined the Domain in Active Directory Users and Computer Domain > Computers Directory](https://github.com/ian-bates-it/Join-A-Client-To-A-Domain?tab=readme-ov-file#confirm-that-the-windows-10-pro-client-has-joined-the-domain)
+
+
+
+<h2>Prerequisites</h2>
+
+1. Complete [Chapter 1 of this series, Creating a Windows 10 Pro and Windows 2022 Server Virtual Machines in Azure.](https://github.com/ian-bates-it/Azure-Virtual-Machine-Setup)
+
+2. Complete [Chapter 2 of this series, Configuring the DNS settings for our Windows 10 Pro (Client) and Windows 2022 Server (Domain Controller).](https://github.com/ian-bates-it/Azure-Controller-Client-Configuration)
+
+3. Complete [Chapter 3 of this series, Installing Active Directory on a Windows 2022 Server VM and promoting it to a Domain Controller.](https://github.com/ian-bates-it/Install-Active-Directory-on-Windows-2022-Server)
+
+4. Complete [Chapter 4 of this series, Create Organizational Units and Users in Active Directory.](https://github.com/ian-bates-it/Active-Directory-Users-And-Computers)
+
+
+
+<br />
+<br />
+
 
 ---
-<br />
+
+<h1>Part 1:</h1>
+
 <h2>Remote into the Windows 10 Pro Client with Remote Desktop</h2>
 
 - In the Azure Virtual Machine management, we can find the public IP address of our Windows 10 Pro virtual machine as shown below.
@@ -41,9 +85,12 @@ Overview
   <img src="https://github.com/user-attachments/assets/b0665b95-0116-4768-9a3d-c95f8f429acf" height="50%" width="50%" />
 
 
+<br />
+<br />
 
 ---
-<br />
+
+<h1>Part 2:</h1>
 
 <h2>Join the Windows 10 Pro Client VM To Our Windows 2022 Server Domain</h2>
 
@@ -120,8 +167,12 @@ To approve the Domain Changes, do the following.
 
 
 
----
 <br />
+<br />
+
+---
+
+<h1>Part 3:</h1>
 
 <h3>Confirm that the Windows 10 Pro Client Has Joined The Domain</h3>
 
