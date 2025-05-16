@@ -22,8 +22,8 @@ See Part 2_Deploying Active Directory around minute (18:05)
 
 <h2>Operating Systems Used </h2>
 
-- Windows Server 2022
-- Windows 10 Pro (21H2)
+- Windows Server 2022 Datacenter Azure edition - (Domain Controller)
+- Windows 10 Pro (21H2) - (Client)
 
 
 <!--
